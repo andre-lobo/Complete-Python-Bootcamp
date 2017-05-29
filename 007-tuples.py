@@ -1,4 +1,4 @@
-#list
+#list != tuple
 l = [1, 2, 3]
 
 #tuple is immutable

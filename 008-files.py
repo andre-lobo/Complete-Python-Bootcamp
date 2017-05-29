@@ -1,3 +1,5 @@
+#handling files
+
 file_path = "C:\\Andre\\Work\\Python\\Files\\file_test.txt"
 
 f = open(file_path)

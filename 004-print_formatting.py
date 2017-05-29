@@ -1,3 +1,5 @@
+#printing examples
+
 s = "String"
 print("Place my variable here: %s" %(s))
 

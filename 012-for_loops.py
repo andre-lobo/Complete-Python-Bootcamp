@@ -1,3 +1,5 @@
+#for loops examples
+
 l = [1, 2, 3, 4, 5]
 
 for elements in l:
@@ -59,5 +61,3 @@ print("\nDictionary in for loop with .items()")
 d = {"k1": 1, "k2": 2, "k3": 3}
 for k, v in d.items():
 	print(str(k) + ":" + str(v))
-
-
