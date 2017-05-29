@@ -1,14 +1,13 @@
-#functions and methods homework
+# functions and methods homework
 
 import math
 import string
-import collections
 
 # 1. Write a function that computes the volume of a sphere given its radius.
 print("*** Resolution of Exercise 1 ***")
 
 def vol(rad):
-	return (4 * math.pi * (rad ** 3)) / 3
+    return (4 * math.pi * (rad ** 3)) / 3
 
 print(vol(5))
 
@@ -18,17 +17,17 @@ print(vol(5))
 print("\n*** Resolution of Exercise 2 ***")
 
 def ran_check(num, low, high):
-	if num in range(low, high):
-		print("%s is in the range" %str(num))
-	else:
-		print("The number is outside the range")
+    if num in range(low, high):
+        print("%s is in the range" % str(num))
+    else:
+        print("The number is outside the range")
 
 def ran_boolean_v1(num, low, high):
     lst = list(range(low, high))
     return lst.count(num) > 0
 
 def ran_boolean_v2(num, low, high):
-	return num in range(low, high)
+    return num in range(low, high)
 
 ran_check(5, 1, 20)
 print(ran_boolean_v1(5, 1, 20))
@@ -55,20 +54,20 @@ def up_low_my_version(s):
         if letter.islower():
             lower += 1
 
-    return "No. of Upper case characters: {u}\nNo. of Lower case characters: {l}".format(u = upper, l = lower)
+    return "No. of Upper case characters: {u}\nNo. of Lower case characters: {l}".format(u=upper, l=lower)
 
 def up_low_course_version(s):
-	d = {"upper": 0, "lower": 0}
+    d = {"upper": 0, "lower": 0}
 
-	for c in s:
-		if c.isupper():
-			d["upper"] += 1
-		elif c.islower():
-			d["lower"] += 1
-		else:
-			pass
+    for c in s:
+        if c.isupper():
+            d["upper"] += 1
+        elif c.islower():
+            d["lower"] += 1
+        else:
+            pass
 
-	return "\nNo. of Upper case characters: {u}\nNo. of Lower case characters: {l}".format(u = d["upper"], l = d["lower"])
+    return "\nNo. of Upper case characters: {u}\nNo. of Lower case characters: {l}".format(u=d["upper"], l=d["lower"])
 
 print(up_low_my_version("Hello Mr. Rogers, how are you this fine Tuesday?"))
 print(up_low_course_version("Hello Mr. Rogers, how are you this fine Tuesday?"))
@@ -85,13 +84,13 @@ def unique_list_my_version(l):
     return list(set(l))
 
 def unique_list_course_version(l):
-	x = []
+    x = []
 
-	for a in l:
-		if a not in x:
-			x.append(a)
+    for a in l:
+        if a not in x:
+            x.append(a)
 
-	return x
+    return x
 
 print(unique_list_my_version([1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 5]))
 print(unique_list_course_version([1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 5]))
