@@ -11,5 +11,3 @@ print("Shift+Tab will show help pop up for docstring")
 
 #markdown text
 print("So i can write normal text. This is not run as code.")
-
-

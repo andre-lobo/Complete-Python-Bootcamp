@@ -29,6 +29,3 @@ d = { "k1": 1, "k2": 2, "k3": 3 }
 print(d.keys())
 print(d.values())
 print(d.items())
-
-
-

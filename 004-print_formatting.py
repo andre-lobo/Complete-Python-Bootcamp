@@ -15,4 +15,3 @@ print("First: %s, Second: %s, Third: %s" %("Hi", "Two", 3))
 print("First: %s, Second: %s" %(2, 2))
 
 print("First: {x} Second: {y} Third: {x}".format(x = "inserted", y = "two"))
-
