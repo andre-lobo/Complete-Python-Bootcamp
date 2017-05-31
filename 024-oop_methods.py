@@ -25,4 +25,3 @@ print("Area:", c.area())
 c.set_radius(20)
 print("Radius:", c.get_radius())
 print("Area:", c.area())
-    
